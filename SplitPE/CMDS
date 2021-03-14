@@ -1,0 +1,1 @@
+seq 48 | xargs -I % bsub -o LSF/ -J SPLIT_$$ -n 3 -W 359 ./splitPE.py -b %:48 data/barcode.192.txt ../WD5816_CL_igo_09357_E/rawdata/Sample_DD5816_CL_p15_1606_IGO_10626_N_19/DD5816_CL_p15_1606_IGO_10626_N_19_S9_R1_001.fastq.gz
