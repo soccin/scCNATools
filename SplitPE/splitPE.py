@@ -17,7 +17,7 @@ def getMM1Barcodes(barcodes):
     return barcodesm1
 
 def writeFastq(fp,rr,bcid):
-    print(rr[0],rr[3],bcid,file=fp)
+    print("@"+rr[0],rr[3],bcid,file=fp)
     print(rr[1],file=fp)
     print("+",file=fp)
     print(rr[2],file=fp)
